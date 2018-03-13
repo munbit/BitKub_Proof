@@ -5,7 +5,7 @@ import { composeWithDevTools } from 'redux-devtools-extension';
 import { StackNavigator } from 'react-navigation';
 import thunk from 'redux-thunk';
 import reducer from './redux';
-import List from './screens/list';
+import Home from './screens/home';
 import Add from './screens/add';
 
 // Type navigation object that's being passed to every screen by react-navigation
@@ -25,7 +25,7 @@ const store = createStore(
 
 // Configure navigation
 const Screens = StackNavigator({
-  list: { screen: List }, // list with the chart
+  home: { screen: Home }, // list with the chart
   add: { screen: Add },   // add new coin screen
 }, {
     mode: 'modal',      // Add screen slides up from the bottom

@@ -72,7 +72,7 @@ export default class Chart extends Component {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 38, // take 38% of the screen height
+    flex: 50, // take 38% of the screen height
     backgroundColor: '#FFFFFF',
   },
   loading: {
